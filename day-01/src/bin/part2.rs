@@ -50,8 +50,6 @@ fn part2(input: &str) -> u32 {
 
             if let Ok(num) = concatenated.parse::<u32>() {
                 result += num;
-
-                println!("line: {}, fd {}, ld: {}", line, first, last);
             }
         }
     }
