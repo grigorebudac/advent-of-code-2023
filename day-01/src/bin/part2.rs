@@ -166,8 +166,8 @@ nine8foursnczninednds
 seven443six8three31
 ",
         );
-        let result = 75 + 33 + 52 + 56 + 97 + 71 + 46 + 77 + 46 + 12 + 11 + 99 + 96 + 71;
-        assert_eq!(result, result);
+        let man_result = 75 + 33 + 52 + 56 + 97 + 71 + 46 + 77 + 46 + 12 + 11 + 99 + 92 + 71;
+        assert_eq!(result, man_result);
     }
 
     #[test]
