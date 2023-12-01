@@ -18,11 +18,11 @@ fn part2(input: &str) -> u32 {
 
             let digit = get_digit_from_chars(&characters);
 
-            if (digit.is_none()) {
+            if digit.is_none() {
                 continue;
             }
 
-            if (first_digit.is_none()) {
+            if first_digit.is_none() {
                 first_digit = digit;
                 break;
             }
@@ -35,11 +35,11 @@ fn part2(input: &str) -> u32 {
 
             let digit = get_digit_from_chars(&characters);
 
-            if (digit.is_none()) {
+            if digit.is_none() {
                 continue;
             }
 
-            if (last_digit.is_none()) {
+            if last_digit.is_none() {
                 last_digit = digit;
                 break;
             }
@@ -73,12 +73,12 @@ fn get_digit_from_chars(input: &str) -> Option<String> {
     ];
 
     for (word, digit) in digits.iter() {
-        if (input.contains(word)) {
+        if input.contains(word) {
             result = Some(digit.to_string());
             break;
         }
 
-        if (input.contains(digit)) {
+        if input.contains(digit) {
             result = Some(digit.to_string());
             break;
         }

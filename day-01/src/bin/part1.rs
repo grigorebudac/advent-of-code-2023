@@ -12,8 +12,8 @@ fn part1(input: &str) -> u32 {
         let mut last_digit = None;
 
         for character in line.chars() {
-            if (character.is_numeric()) {
-                if (first_digit.is_none()) {
+            if character.is_numeric() {
+                if first_digit.is_none() {
                     first_digit = Some(character);
                 }
 
