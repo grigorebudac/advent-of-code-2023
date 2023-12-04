@@ -24,12 +24,12 @@ fn process(input: &str) -> u32 {
     while i < scratchcards.len() {
         let num_copies = scratchcard_copies[i];
         let (first_column, second_column) = &scratchcards[i];
-        let winning_numbers = first_column.intersection(second_column);
-        let count = winning_numbers.count();
+        let winning_numbers = first_column.intersection(&second_column);
+        let count = &winning_numbers.count();
 
         for j in i + 1..i + 1 + count {
             if j < scratchcard_copies.len() {
-                scratchcard_copies[j] += num_copies;
+                scratchcard_copies[j] += &num_copies;
             }
         }
 
