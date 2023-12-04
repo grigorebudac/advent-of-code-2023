@@ -36,7 +36,7 @@ fn process(input: &str) -> u32 {
         i += 1;
     }
 
-    scratchcard_copies.iter().sum()
+    return scratchcard_copies.iter().sum();
 }
 
 fn get_card_numbers(input: &str) -> (HashSet<i32>, HashSet<i32>) {
